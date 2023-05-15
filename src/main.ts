@@ -1,12 +1,15 @@
-let username = 'nayan1';
+let username:string = 'Nayan';
 
-console.log(username);
+let age: number = 56;
 
-let a:number = 12;
-let b:string = '6';
-let c:number = 5;
+let isLoading: boolean;
 
-console.log(a + b);
+let album: any;
 
-console.log(a * b);
+username = 'Golu';
 
+isLoading = false;
+
+album = 'dkjgfd';
+
+age = 67;
