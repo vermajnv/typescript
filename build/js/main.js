@@ -1,15 +1,11 @@
 "use strict";
-let username = 'Nayan';
-let age = 56;
-let isLoading;
-let album;
-username = 'Golu';
-isLoading = false;
-album = 'dkjgfd';
-age = 67;
-const sum = (a, b) => {
-    return a + b;
-};
-let postId;
-let isActive;
-let regEx = /\w+/g;
+let stringArray = ['One', 'Two', 'Three'];
+let guitar = ['Strat', 'Les', 5454];
+let mixedData = ['Somthing', 345, true];
+stringArray[0] = '453';
+// Strict to a fixed length and type sequence
+let test = ['dfd0', true, 34];
+// test.push('dfdg', true, 45);
+let mixed = ['Nayan', true, 28];
+// test = mixed; // invalid cannot assign to fixed variable
+mixed = test; // valid

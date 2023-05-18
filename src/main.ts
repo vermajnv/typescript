@@ -1,26 +1,18 @@
-let username:string = 'Nayan';
+let stringArray = ['One', 'Two', 'Three'];
 
-let age: number = 56;
+let guitar = ['Strat', 'Les', 5454];
 
-let isLoading: boolean;
+let mixedData = ['Somthing', 345, true];
 
-let album: any;
+stringArray[0] = '453'
 
-username = 'Golu';
+// Strict to a fixed length and type sequence
+let test: [string, boolean, number] = ['dfd0', true, 34];
 
-isLoading = false;
+// test.push('dfdg', true, 45);
 
-album = 'dkjgfd';
+let mixed = ['Nayan', true, 28];
 
-age = 67;
+// test = mixed; // invalid cannot assign to fixed variable
 
-
-const sum = (a:number, b:number) => {
-    return a + b;
-}
-
-let postId: string|number;
-
-let isActive: number | boolean;
-
-let regEx:RegExp = /\w+/g
+mixed = test; // valid 
