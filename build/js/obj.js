@@ -10,3 +10,7 @@ let golu = {
     age: 24,
     band: "toofan"
 };
+let myName;
+// myName = 'Golll'
+let userName;
+userName = 'Golu';

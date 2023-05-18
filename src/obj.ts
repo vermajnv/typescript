@@ -3,6 +3,7 @@ type Guitarist = {
     age : number,
     band : string,
     album? : (string | number)[] // Optional
+    link? : stringOrNumberArray
 }
 
 let nayan:Guitarist = {
@@ -17,3 +18,15 @@ let golu: Guitarist = {
     age : 24,
     band : "toofan"
 }
+
+type stringOrNumber = string | number;
+
+type stringOrNumberArray = (string | number)[];
+
+let myName: 'Nayan';
+
+// myName = 'Golll'
+
+let userName : 'Nayan' | 'Golu' | 'Rahul';
+
+userName = 'Golu'
