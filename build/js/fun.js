@@ -22,3 +22,31 @@ logMsg(add(5, 6));
 let multiply = (c, d) => {
     return c * d;
 };
+const total = (a, ...num) => {
+    return num.reduce((pre, curr) => {
+        return pre + curr;
+    }, a);
+};
+console.log(total(5, 90, 6));
+// Return type never
+const errorMessage = (message) => {
+    throw new Error(message);
+};
+const infinite = () => {
+    let i = 1;
+    while (true) {
+        i++;
+        if (i === 20)
+            break;
+    }
+};
+const isString = (value) => {
+    return (typeof value === 'string') ? true : false;
+};
+const numberOrString = (value) => {
+    if (typeof value === 'number')
+        return 'number';
+    if (isString(value))
+        return 'string';
+    return errorMessage('This is false');
+};

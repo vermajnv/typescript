@@ -50,3 +50,39 @@ let multiply:multType = (c, d) =>
 {
     return c * d;
 }
+
+
+const total = (a: number, ...num: number[]) : number => {
+    return num.reduce((pre, curr) => {
+        return pre + curr;
+    }, a)
+};
+
+console.log(total(5, 90, 6,));
+
+// Return type never
+const errorMessage = (message : string) => {
+    throw new Error(message)
+}
+
+const infinite = () => {
+    let i : number = 1;
+
+    while(true)
+    {
+        i++
+        if(i === 20)
+        break;
+    }
+}
+
+const isString = (value : any) : boolean => {
+    return (typeof value === 'string') ? true : false
+}
+
+const numberOrString = (value : number | string) : string => {
+    if(typeof value === 'number') return 'number';
+    if(isString(value)) return 'string';
+
+    return errorMessage('This is false')
+}
