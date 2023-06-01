@@ -39,3 +39,19 @@ class Guitarist {
 }
 const gimmy = new Guitarist('Nayan', 'Tabala');
 console.log(gimmy.play('Drama'));
+class Beaps {
+    constructor(name) {
+        this.name = name;
+        this.id = ++Beaps.count;
+    }
+    static getCount() {
+        return Beaps.count;
+    }
+}
+Beaps.count = 0;
+const beap1 = new Beaps('1st Beap');
+const beap2 = new Beaps('2nd Beap');
+const beap3 = new Beaps('3rd Beap');
+console.log(beap1.id);
+console.log(beap2.id);
+console.log(beap3.id);

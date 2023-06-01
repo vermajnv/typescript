@@ -74,3 +74,26 @@ class Guitarist implements Musician {
 const gimmy = new Guitarist('Nayan', 'Tabala');
 
 console.log(gimmy.play('Drama'));
+
+class Beaps {
+    static count:number = 0;
+
+    public id : number;
+
+    constructor(public name : string)
+    {
+        this.id = ++Beaps.count;
+    }
+
+    static getCount() : number {
+        return Beaps.count;
+    }
+}
+
+const beap1 = new Beaps('1st Beap')
+const beap2 = new Beaps('2nd Beap')
+const beap3 = new Beaps('3rd Beap')
+
+console.log(beap1.id);
+console.log(beap2.id);
+console.log(beap3.id);
