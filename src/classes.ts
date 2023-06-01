@@ -1,20 +1,29 @@
 class Coder {
-
-    name : string;
-    age : number;
-    lang : string;
-    address : string;
-    
     constructor(
-        name : string,
-        age : number,
-        lang : string,
-        address : string 
+    public readonly name : string,
+    private age : number,
+    public lang : string,
+    private address : string,
+    protected id : number = 234
     )
     {
-        this.name = name;
-        this.age = age;
-        this.lang = lang;
-        this.address = address;
+       
+    }
+
+    getName()
+    {
+        return `My name is ${this.name}`;
+    }
+
+    getAge()
+    {
+        return this.age;
     }
 }
+
+let coder = new Coder('Nayan', 28, 'JavaScript', 'LMP');
+
+console.log(coder.getAge());
+
+// Not possible as name is readOnly
+// coder.name = 'Golu'; 
